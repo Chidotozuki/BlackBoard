@@ -16,19 +16,19 @@ const Navbar = () => {
     <header className="bg-base-300 border-b border-base-content/10">
       <div className="mx-auto max-w-6xl p-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-bold text-primary font-mono tracking-tight">
+          <h1 className="text-3xl font-bold text-white font-mono tracking-tight">
             BlackBoard
           </h1>
 
           {/* Right side actions */}
           <div className="flex items-center gap-4">
-            <Link to="/create" className="btn btn-primary">
+            <Link to="/create" className="btn btn-primary ml-2">
               <PlusIcon className="size-5" />
               <span>New Note</span>
             </Link>
 
             {/* Profile dropdown */}
-            <div className="dropdown dropdown-end">
+            <div className="dropdown dropdown-end ml-0">
               <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                 <UserCircle2 className="size-7" />
               </div>
