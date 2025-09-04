@@ -13,6 +13,7 @@ export const authenticate = (req, res, next) => {
     // req.user = user; // store entire user object
     req.userId = decoded.userId; // only store ID
     req.token = token;
+    // console.log("Authenticated user ID:", req.userId);
     next();
   } catch (error) {
     console.error("Auth error:", error.message);

@@ -4,7 +4,7 @@ import User from "../models/User.js";
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log("Login attempt:", req.body);
+    console.log("Login attempt:",email);
 
     // Input validation
     if (!email || !password) {
@@ -81,7 +81,7 @@ export const signup = async (req, res) => {
       password,
     });
 
-    console.log("Saving user to database:", user);
+    // console.log("Saving user to database:", user);
     await user.save();
     console.log("User saved successfully");
 
