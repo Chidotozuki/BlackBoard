@@ -9,7 +9,7 @@ import NoteDetailPage from "./pages/NoteDetailPage";
 import { useAuth } from "./context/AuthContext";
 const AppLayout = () => {
   const { isAuthenticated } = useAuth();
-  console.log("isAuthenticated:", isAuthenticated);
+  // console.log("isAuthenticated:", isAuthenticated);
   return (
     <Routes>
       {!isAuthenticated ? (
